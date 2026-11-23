@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php';
+require '../services/koneksi.php';
 
 $q_stat = mysqli_query($conn, "SELECT * FROM statistik WHERE id = 1");
 $stat   = mysqli_fetch_assoc($q_stat);

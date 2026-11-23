@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php';
+require '../services/koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama     = trim(mysqli_real_escape_string($conn, $_POST['nama']));

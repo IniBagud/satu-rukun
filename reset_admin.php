@@ -1,5 +1,5 @@
 <?php
-require 'koneksi.php';
+require './services/koneksi.php';
 
 $email    = 'admin@saturukun.com';
 $password = password_hash('admin123', PASSWORD_BCRYPT);

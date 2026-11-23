@@ -1,5 +1,5 @@
 <?php
-require 'koneksi.php';
+require './services/koneksi.php';
 $q_stat = mysqli_query($conn, "SELECT * FROM statistik WHERE id = 1");
 $stat   = mysqli_fetch_assoc($q_stat);
 ?>
@@ -496,7 +496,7 @@ $stat   = mysqli_fetch_assoc($q_stat);
   <!-- Tombol Logout -->
   <div>
     <a
-      href="logout.php"
+      href="./services/logout.php"
       class="w-full bg-red-500 hover:bg-red-600 text-white py-3 px-4 rounded-xl text-sm font-semibold flex items-center justify-center space-x-2 transition duration-200 shadow-sm"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

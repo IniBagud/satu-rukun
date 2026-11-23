@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php';
+require '../services/koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Gunakan trim untuk menghapus spasi yang tidak sengaja ketik
