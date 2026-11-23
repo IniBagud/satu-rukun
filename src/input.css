@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Beritahu Tailwind v4 untuk memindai folder admin & halaman */
+@source "../admin";
+@source "../halaman";
+@source "../index.php";

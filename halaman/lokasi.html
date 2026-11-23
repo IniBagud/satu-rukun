@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+
+    <title>Lokasi</title>
+  </head>
+  <body>
+    <header
+      class="bg-white border-b border-gray-100 py-4 px-6 md:px-16 flex items-center justify-between"
+    >
+      <!-- Brand / Logo Name -->
+      <div class="flex items-center space-x-1">
+        <a
+          href="../index.php"
+          class="flex items-center space-x-3 group cursor-pointer"
+        >
+          <div class="font-bold text-xl leading-none text-emerald-800">
+            SatuRukun <br />
+            <span class="text-sm font-normal text-gray-400 tracking-wider">
+              RW 001 Garut
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav
+        class="hidden lg:flex items-center space-x-8 text-sm font-medium text-gray-600"
+      >
+        <a href="layananlapor.php" class="hover:text-emerald-700 transition"
+          >Layanan Lapor</a
+        >
+        <a href="profil-rw.php" class="hover:text-emerald-700 transition"
+          >Profil Ketua RW</a
+        >
+        <a href="kegiatan.php" class="hover:text-emerald-700 transition"
+          >Kegiatan</a
+        >
+        <a
+          href="lokasi.html"
+          class="bg-emerald-800 text-white px-4 py-2 rounded-xl font-medium shadow-sm"
+          >Lokasi RW</a
+        >
+        <a href="berita.php" class="hover:text-emerald-700 transition"
+          >Berita</a
+        >
+        <a href="keuangan.php" class="hover:text-emerald-700 transition"
+          >Laporan Keuangan</a
+        >
+      </nav>
+
+      <!-- Login Button -->
+      <div>
+        <a
+          href="login.html"
+          class="px-5 py-2 bg-emerald-800 hover:bg-emerald-900 text-white rounded-full text-sm font-medium transition"
+        >
+          Login
+        </a>
+      </div>
+    </header>
+    <!-- Main Content Area - Lokasi RW -->
+    <main
+      class="min-h-screen bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center"
+    >
+      <!-- Title Section -->
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <h1
+          class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3"
+        >
+          Lokasi RW 001
+        </h1>
+        <!-- Green Divider Accent -->
+        <div class="w-10 h-1 bg-[#186a5a] mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Main Container (Map & Address Card) -->
+      <div class="w-full max-w-4xl space-y-6">
+        <!-- Map Container Card -->
+        <div
+          class="relative w-full h-80 sm:h-96 md:h-105 bg-[#e3eae3] rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex items-center justify-center"
+        >
+          <!-- Google Maps Embed -->
+          <!-- Catatan: Anda bisa mengganti URL src di bawah dengan koordinat/lokasi peta asli RW Anda dari Google Maps Embed -->
+          <iframe
+            title="Peta Lokasi RW 001 Garut"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4605.338101996971!2d107.72432584235554!3d-6.939763549906587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sus!4v1792602342114!5m2!1sid!2sus"
+            class="w-full h-full border-0 grayscale-20 opacity-90 contrast-[0.95]"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+
+          <!-- Custom Center Badge / Label Marker (Opsional) -->
+          <div
+            class="absolute -bottom-4 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-2.5 rounded-full shadow-md border border-emerald-100 pointer-events-none"
+          >
+            <span
+              class="text-xs sm:text-sm font-bold text-[#186a5a] tracking-wide"
+            >
+              RW 001 Garut
+            </span>
+          </div>
+
+          <!-- Compass / North Indicator (Pojok Kanan Bawah) -->
+          <div
+            class="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md text-[11px] font-bold text-gray-500 shadow-sm pointer-events-none"
+          >
+            N ↑
+          </div>
+        </div>
+
+        <!-- Address Info Card -->
+        <div
+          class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 flex items-start space-x-4 sm:space-x-5"
+        >
+          <!-- Icon Marker Box -->
+          <div
+            class="w-12 h-12 bg-emerald-50 text-[#186a5a] rounded-xl flex items-center justify-center shrink-0"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+
+          <!-- Text Information -->
+          <div class="space-y-1">
+            <h2 class="text-base sm:text-lg font-bold text-gray-900">
+              RW 001 Garut
+            </h2>
+            <p
+              class="text-xs sm:text-sm text-gray-500 leading-relaxed font-normal"
+            >
+              Jl. Lingkungan RW 001, Kelurahan Garut Kota, Kecamatan Garut Kota,
+              <br class="hidden sm:inline" />
+              Kabupaten Garut, Jawa Barat 44151
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f7f6f1] py-6 px-6 md:px-16 border-t border-gray-100/50">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <!-- Teks Hak Cipta -->
+        <p class="text-xs text-gray-400 font-normal">
+          © 2026 Satu Rukun RW 001 Garut. Hak cipta dilindungi.
+        </p>
+
+        <!-- Branding Logo Footer -->
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-7 h-7 bg-emerald-800 rounded-lg flex items-center justify-center text-white"
+          >
+            <!-- Icon Rumah -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-gray-700">
+            satu rukun <span class="text-emerald-900 font-bold">001</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
