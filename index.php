@@ -9,7 +9,7 @@ $stat   = mysqli_fetch_assoc($q_stat);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/output.css?v=2" />
     <title>Satu Rukun - RW 001 Garut</title>
     <style>
       .no-scrollbar::-webkit-scrollbar {
@@ -53,7 +53,7 @@ $stat   = mysqli_fetch_assoc($q_stat);
         <a
           href="./halaman/layananlapor.php"
           class="hover:text-emerald-700 transition"
-          >Layanan Lapor</a
+          >Layanan Publik</a
         >
         <a
           href="./halaman/profil-rw.php"
@@ -154,7 +154,7 @@ $stat   = mysqli_fetch_assoc($q_stat);
             href="./halaman/layananlapor.php"
             class="px-6 py-3 bg-emerald-800 hover:bg-emerald-900 text-white font-medium rounded-xl text-sm shadow-sm transition"
           >
-            Layanan Lapor
+            Layanan Publik
           </a>
           <a
             href="./halaman/berita.php"
@@ -315,6 +315,306 @@ $stat   = mysqli_fetch_assoc($q_stat);
         </div>
       </div>
     </section>
+
+    <!-- Section 3: Layanan Publik -->
+    <section class="bg-gray-200 py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-6 md:px-16">
+        <!-- Header Section -->
+        <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14">
+          <span
+            class="block text-[11px] font-extrabold tracking-widest text-emerald-700 uppercase mb-2"
+          >
+            PELAYANAN WARGA
+          </span>
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3"
+          >
+            Layanan Publik
+          </h2>
+          <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+            Berbagai layanan untuk memenuhi kebutuhan administrasi warga RW 001 Garut.
+          </p>
+        </div>
+
+        <!-- Card Alur Pengajuan -->
+        <div
+          class="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 sm:p-12"
+        >
+          <!-- Judul Card dengan Garis Kiri-Kanan -->
+          <div class="flex items-center justify-center gap-4 mb-10">
+            <div class="h-px bg-gray-200 w-16 sm:w-28"></div>
+            <h3
+              class="text-xs font-extrabold tracking-widest text-gray-800 uppercase text-center"
+            >
+              ALUR PENGAJUAN SURAT PENGANTAR
+            </h3>
+            <div class="h-px bg-gray-200 w-16 sm:w-28"></div>
+          </div>
+
+          <!-- Grid 5 Langkah -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <!-- Langkah 01 -->
+            <div class="space-y-3">
+              <div
+                class="w-11 h-11 rounded-full border border-emerald-500 text-emerald-700 font-bold text-xs flex items-center justify-center ring-4 ring-emerald-50"
+              >
+                01
+              </div>
+              <h4 class="font-bold text-gray-900 text-sm pt-2">Login</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Masuk dengan akun warga untuk melakukan verifikasi identitas.
+                Jika belum memiliki akun, silakan mendaftar melalui admin RT.
+              </p>
+            </div>
+
+            <!-- Langkah 02 -->
+            <div class="space-y-3">
+              <div
+                class="w-11 h-11 rounded-full border border-emerald-500 text-emerald-700 font-bold text-xs flex items-center justify-center ring-4 ring-emerald-50"
+              >
+                02
+              </div>
+              <h4 class="font-bold text-gray-900 text-sm pt-2">Pilih Surat</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Pilih jenis surat pengantar yang dibutuhkan beserta persyaratan
+                yang harus dipenuhi.
+              </p>
+            </div>
+
+            <!-- Langkah 03 -->
+            <div class="space-y-3">
+              <div
+                class="w-11 h-11 rounded-full border border-emerald-500 text-emerald-700 font-bold text-xs flex items-center justify-center ring-4 ring-emerald-50"
+              >
+                03
+              </div>
+              <h4 class="font-bold text-gray-900 text-sm pt-2">
+                Isi Keperluan
+              </h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Jelaskan keperluan pembuatan surat pengantar secara lengkap dan
+                jelas.
+              </p>
+            </div>
+
+            <!-- Langkah 04 -->
+            <div class="space-y-3">
+              <div
+                class="w-11 h-11 rounded-full border border-emerald-500 text-emerald-700 font-bold text-xs flex items-center justify-center ring-4 ring-emerald-50"
+              >
+                04
+              </div>
+              <h4 class="font-bold text-gray-900 text-sm pt-2">Kirim</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Permohonan akan diverifikasi oleh Ketua RT setempat, kemudian
+                diteruskan kepada Ketua RW.
+              </p>
+            </div>
+
+            <!-- Langkah 05 -->
+            <div class="space-y-3">
+              <div
+                class="w-11 h-11 rounded-full border border-emerald-500 text-emerald-700 font-bold text-xs flex items-center justify-center ring-4 ring-emerald-50"
+              >
+                05
+              </div>
+              <h4 class="font-bold text-gray-900 text-sm pt-2">Selesai</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Setelah disetujui, surat akan ditandatangani oleh Ketua RT/RW
+                dan siap untuk diambil.
+              </p>
+            </div>
+          </div>
+
+          <!-- Garis Pembatas & Tombol Ajukan Surat -->
+          <div class="mt-10 pt-8 border-t border-gray-100 flex justify-center">
+            <a
+              href="./halaman/layananlapor.php#Pilih-surat"
+              class="inline-flex items-center space-x-2 bg-[#186a5a] hover:bg-[#135548] text-white font-semibold text-sm px-7 py-3.5 rounded-xl shadow-sm transition duration-200"
+            >
+              <span>Ajukan Surat</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="section-4">
+        <!-- Section 4: Struktur Pengurus RW 001 -->
+      <?php
+      $foto_placeholder = "./assets/gambar/foto-placeholder.png";
+
+      $pimpinan_rw = [
+        ["nama" => "Nama Ketua RW", "jabatan" => "Ketua RW", "telp" => "0812-3456-7801"],
+        ["nama" => "Nama Sekretaris RW", "jabatan" => "Sekretaris RW", "telp" => "0812-3456-7802"],
+        ["nama" => "Nama Bendahara RW", "jabatan" => "Bendahara RW", "telp" => "0812-3456-7803"],
+        ["nama" => "Nama Pengurus LPMK", "jabatan" => "LPMK", "telp" => "0812-3456-7804"],
+      ];
+
+      $pengurus_anggota = [
+        ["nama" => "Lusi Susilawati", "jabatan" => "Ketua PKK RW", "telp" => "0812-3456-7811"],
+        ["nama" => "Bambang Purwanto", "jabatan" => "Koordinator Keamanan", "telp" => "0812-3456-7812"],
+        ["nama" => "Rusmin", "jabatan" => "Seksi Keamanan", "telp" => "0812-3456-7813"],
+        ["nama" => "Siti Rulaida", "jabatan" => "Koordinator Dasa Wisma", "telp" => "0812-3456-7814"],
+        ["nama" => "H. Dzulbilah", "jabatan" => "Pengurus RW", "telp" => "0812-3456-7816"],
+        ["nama" => "Mamat", "jabatan" => "Seksi Humas", "telp" => "0812-3456-7815"],
+      ];
+
+      $pengurus_rt = [
+        ["rt" => "RT 001", "nama" => "Agus Setiawan", "jabatan" => "Ketua RT 001", "telp" => "0812-3456-7901"],
+        ["rt" => "RT 002", "nama" => "Dedi Suhendar", "jabatan" => "Ketua RT 002", "telp" => "0812-3456-7902"],
+        ["rt" => "RT 003", "nama" => "Asep Kurnia", "jabatan" => "Ketua RT 003", "telp" => "0812-3456-7903"],
+        ["rt" => "RT 004", "nama" => "Eko Firmansyah", "jabatan" => "Ketua RT 004", "telp" => "0812-3456-7904"],
+        ["rt" => "RT 005", "nama" => "Yayat Hidayat", "jabatan" => "Ketua RT 005", "telp" => "0812-3456-7905"],
+        ["rt" => "RT 006", "nama" => "Wawan Gunawan", "jabatan" => "Ketua RT 006", "telp" => "0812-3456-7906"],
+      ];
+      ?>
+
+      <section class="bg-gray-200 py-16 md:py-24 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 md:px-16">
+          
+          <!-- Header Section -->
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="block text-[11px] font-extrabold tracking-widest text-emerald-700 uppercase mb-2">
+              SATU RUKUN · GARUT
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
+              Struktur Pengurus RW 001
+            </h2>
+            <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+              Pengurus RW 001 Garut periode berjalan yang siap melayani masyarakat.
+            </p>
+          </div>
+
+          <!-- KELOMPOK 1: PIMPINAN RW -->
+          <div class="mb-14">
+            <div class="flex justify-center mb-8">
+              <span class="px-4 py-1.5 rounded-full bg-emerald-100/70 text-emerald-800 text-xs font-bold">
+                Pimpinan RW
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <?php foreach ($pimpinan_rw as $item): ?>
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md transition">
+                  <!-- Bingkai Foto -->
+                  <div class="w-24 h-28 rounded-2xl bg-emerald-50 overflow-hidden mb-4 flex items-center justify-center">
+                    <img
+                      src="<?= $foto_placeholder ?>"
+                      alt="<?= htmlspecialchars($item['nama']) ?>"
+                      class="w-full h-full object-cover"
+                      onerror="this.style.display='none'"
+                    />
+                  </div>
+
+                  <h3 class="font-bold text-gray-900 text-sm mb-1">
+                    <?= htmlspecialchars($item['nama']) ?>
+                  </h3>
+                  <span class="text-xs font-semibold text-emerald-700 mb-3">
+                    <?= htmlspecialchars($item['jabatan']) ?>
+                  </span>
+
+                  <div class="flex items-center justify-center space-x-1.5 text-[11px] text-gray-400">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span><?= htmlspecialchars($item['telp']) ?></span>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+
+          <!-- KELOMPOK 2: PENGURUS & ANGGOTA -->
+          <div class="mb-14">
+            <div class="flex justify-center mb-8">
+              <span class="px-4 py-1.5 rounded-full bg-emerald-100/70 text-emerald-800 text-xs font-bold">
+                Pengurus &amp; Anggota
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <?php foreach ($pengurus_anggota as $item): ?>
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md transition">
+                  <!-- Bingkai Foto -->
+                  <div class="w-24 h-28 rounded-2xl bg-emerald-50 overflow-hidden mb-4 flex items-center justify-center">
+                    <img
+                      src="<?= $foto_placeholder ?>"
+                      alt="<?= htmlspecialchars($item['nama']) ?>"
+                      class="w-full h-full object-cover"
+                      onerror="this.style.display='none'"
+                    />
+                  </div>
+
+                  <h3 class="font-bold text-gray-900 text-sm mb-1">
+                    <?= htmlspecialchars($item['nama']) ?>
+                  </h3>
+                  <span class="text-xs font-semibold text-emerald-700 mb-3">
+                    <?= htmlspecialchars($item['jabatan']) ?>
+                  </span>
+
+                  <div class="flex items-center justify-center space-x-1.5 text-[11px] text-gray-400">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span><?= htmlspecialchars($item['telp']) ?></span>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+
+          <!-- KELOMPOK 3: PENGURUS RT -->
+          <div>
+            <div class="flex justify-center mb-9">
+              <span class="inline-flex items-center space-x-1.5 px-4 py-1.5 rounded-full bg-amber-100/80 text-amber-800 text-xs font-bold">
+                <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l3.5 4L12 3l3.5 4L19 3v13a2 2 0 01-2 2H7a2 2 0 01-2-2V3z" />
+                </svg>
+                <span>Pengurus RT</span>
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+              <?php foreach ($pengurus_rt as $rt): ?>
+                <div class="relative bg-white rounded-2xl border border-amber-200/80 shadow-sm pt-7 pb-5 px-4 flex flex-col items-center text-center hover:shadow-md transition">
+                  <!-- Badge RT di Atas Kartu -->
+                  <span class="absolute -top-3 bg-amber-500 text-white text-[10px] font-extrabold tracking-wider uppercase px-3.5 py-1 rounded-full shadow-xs">
+                    <?= htmlspecialchars($rt['rt']) ?>
+                  </span>
+
+                  <!-- Bingkai Foto -->
+                  <div class="w-20 h-24 rounded-2xl bg-amber-50 overflow-hidden mb-3.5 flex items-center justify-center">
+                    <img
+                      src="<?= $foto_placeholder ?>"
+                      alt="<?= htmlspecialchars($rt['nama']) ?>"
+                      class="w-full h-full object-cover"
+                      onerror="this.style.display='none'"
+                    />
+                  </div>
+
+                  <h3 class="font-bold text-gray-900 text-xs sm:text-sm mb-1 leading-snug">
+                    <?= htmlspecialchars($rt['nama']) ?>
+                  </h3>
+                  <span class="text-[11px] font-semibold text-amber-600 mb-3">
+                    <?= htmlspecialchars($rt['jabatan']) ?>
+                  </span>
+
+                  <div class="flex items-center justify-center space-x-1 text-[10px] text-gray-400">
+                    <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span><?= htmlspecialchars($rt['telp']) ?></span>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer

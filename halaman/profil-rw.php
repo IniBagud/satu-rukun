@@ -28,6 +28,11 @@ $rw   = mysqli_fetch_assoc($q_rw);
           href="../index.php"
           class="flex items-center space-x-3 group cursor-pointer"
         >
+          <img
+            src="../assets/gambar/logo_main_web.png"
+            alt="Logo Satu Rukun"
+            class="h-10 w-auto"
+          />
           <div class="font-bold text-xl leading-none text-emerald-800">
             SatuRukun <br />
             <span class="text-sm font-normal text-gray-400 tracking-wider">
@@ -42,7 +47,7 @@ $rw   = mysqli_fetch_assoc($q_rw);
         class="hidden lg:flex items-center space-x-8 text-sm font-medium text-gray-600"
       >
         <a href="layananlapor.php" class="hover:text-emerald-700 transition"
-          >Layanan Lapor</a
+          >Layanan Publik</a
         >
         <a
           href="profil-rw.php"
