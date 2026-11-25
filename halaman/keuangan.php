@@ -32,6 +32,11 @@ $q_list_out = mysqli_query($conn, "SELECT keterangan, SUM(jumlah) as total FROM 
     <header class="bg-white border-b border-gray-100 py-4 px-6 md:px-16 flex items-center justify-between">
       <div class="flex items-center space-x-1">
         <a href="../index.php" class="flex items-center space-x-3 group cursor-pointer">
+          <img
+            src="../assets/gambar/logo_main_web.png"
+            alt="Logo Satu Rukun"
+            class="h-10 w-auto"
+          />
           <div class="font-bold text-xl leading-none text-emerald-800">
             SatuRukun <br />
             <span class="text-sm font-normal text-gray-400 tracking-wider">RW 001 Garut</span>
@@ -40,7 +45,7 @@ $q_list_out = mysqli_query($conn, "SELECT keterangan, SUM(jumlah) as total FROM 
       </div>
 
       <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-gray-600">
-        <a href="layananlapor.php" class="hover:text-emerald-700 transition">Layanan Lapor</a>
+        <a href="layananlapor.php" class="hover:text-emerald-700 transition">Layanan Publik</a>
         <a href="profil-rw.php" class="hover:text-emerald-700 transition">Profil Ketua RW</a>
         <a href="kegiatan.php" class="hover:text-emerald-700 transition">Kegiatan</a>
         <a href="lokasi.html" class="hover:text-emerald-700 transition">Lokasi RW</a>
